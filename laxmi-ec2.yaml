@@ -1,0 +1,38 @@
+
+Parameters:
+  MyKeyPairName:
+    Type: String
+  MyImageId:
+    Type: String
+Resources:
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      UserData:
+        Fn::Base64: |
+          #!/bin/bash
+          cat > ~/file <<EOF
+          Hi,
+          How is it Going?
+          EOF
+      KeyName: ami-02f3f602d23f1659d
+      InstanceType: t2.micro
+      SecurityGroups:
+        - !Ref MySecurityGroup
+      ImageId: !Ref MyImageId
+  MySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allowing SSH from everywhere
+      SecurityGroupIngress:
+        IpProtocol: tcp
+        FromPort: 22
+        ToPort: 22
+        CidrIp: 0.0.0.0/0
+
+
+
+
+
+
+    
