@@ -15,7 +15,7 @@ Resources:
           Hi,
           How is it Going?
           EOF
-      KeyName: ami-02f3f602d23f1659d
+      KeyName: ami-04581fbf744a7d11f
       InstanceType: t2.micro
       SecurityGroups:
         - !Ref MySecurityGroup
