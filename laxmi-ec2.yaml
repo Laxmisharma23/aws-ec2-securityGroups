@@ -1,9 +1,4 @@
 
-Parameters:
-  MyKeyPairName:
-    Type: String
-  MyImageId:
-    Type: String
 Resources:
   MyEC2Instance:
     Type: 'AWS::EC2::Instance'
