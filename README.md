@@ -1,1 +1,1 @@
-# aws-ec2-stack
+# aws-ec2-stack-jenkins-cloudformarion-assignment2
