@@ -3,7 +3,7 @@ agent any
   stages {
     stage('Build ec2') {
       steps {
-        sh "aws cloudformation create-stack --stack-name laxmis3bucket --template-body file://ec2.yaml --region 'us-east-1'"
+        sh "aws cloudformation create-stack --stack-name ec2stacklaxmi --template-body file://ec2.yaml --region 'us-east-1'"
       }
     }
   }
