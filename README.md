@@ -1,1 +1,1 @@
-# aws-ec2-securityGroups
+# aws-ec2-stack
