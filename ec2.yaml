@@ -7,5 +7,6 @@ Resources:
     Properties:
       ImageId: ami-04581fbf744a7d11f
       InstanceType: t2.micro
+      KeyName: laxmi-ec2
        
 	
