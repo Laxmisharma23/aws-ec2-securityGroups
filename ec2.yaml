@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Part 1 - Build a webapp stack with CloudFormation
+
+Resources:
+  WebAppInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-04581fbf744a7d11f
+      InstanceType: t2.micro
+      "Tags" : [
+            {"Key" : "Name", "Value" : "laxmi-cloudformation-ec2"},
+        ]  
+	
